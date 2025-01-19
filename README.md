@@ -2,15 +2,36 @@
 
 This repository houses conceptual viewpoints, coding practice, assignment/competition solutions based on the materials from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
-## Featured contents 
+## Features
 
 * [ATAC-seq data analysis](#Analyze-ATAC-seq-data)
-* [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
 * [Bulk RNA-seq data analysis](#Analyze-bulk-RNA-seq-data)
+* [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
 * [Multi-omics idea](HighLevelIdea_MultiOmics.md)
 * [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
 
-## Technical aspect
+## Technical procedures
+### Analyze bulk RNA-seq data
+  - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
+  - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
+      - Other splice-aware alignment tool options: Olego, HISAT2, MapSplice, ABMapper, Passion, BLAT, RUM ...
+      - Other alignment tools that disregard isoforms: BWA, Bowtie2 ...
+  - Use Rsubread to [align the reads](BulkRNASeq/AlignmentCountingTCell.Rmd)
+    - **Why align?** To pinpoint the specific location on the human genome from which our reads originated
+  - Use Qualimap to perform [quality assurance](BulkRNASeq/Qualimap_QC.sh) on the aligned reads
+  - Use [MultiQC](BulkRNASeq/multiqc_QC.sh) to harmonize all QC and alignment metadata from FastQC, STAR, Qualimap, and other [tools](https://multiqc.info/modules/)
+  - Use GenomicAlignments for aligned reads to [obtain the gene-level or exon-level quantification](BulkRNASeq/AlignmentCountingTCell.Rmd)
+  - Use featureCounts for aligned reads to [count the fragments](BulkRNASeq/featureCounts.sh)
+  - [Recommend] Use Salmon for unaligned reads to [obtain the transcript-level quantification](BulkRNASeq/Salmon_quant.sh)
+    - **Why unalign?** To speed up the counting process of reads
+    - Next step: Use tximport to aggregate transcript-level quantification to the gene level
+  - [Perform differential gene expression analysis](BulkRNASeq/DEAnalysisTCell.Rmd)
+  - [Perform principal component analysis, heatmap, and clustering](BulkRNASeq/PCAHeatmapClusteringTissue.Rmd)
+  - [Perform gene set enrichment analysis](BulkRNASeq/GeneSetTCell.Rmd)
+  - Achieve cell-type resolution in bulk RNA-Seq through deconvolution techniques (*Under Active Construction*)
+
+<hr>
+
 ### Analyze ATAC-seq data
   - [Practical guide](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3)
   - Run [ENCODE ATAC-seq pipeline](https://github.com/ScienceComputing/atac-seq-pipeline/blob/master/README.md) to perform alignment, quality assurance, peaking calling, and signal track generation
@@ -67,35 +88,15 @@ This repository houses conceptual viewpoints, coding practice, assignment/compet
 
 <hr>
 
-### Analyze bulk RNA-seq data
-  - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
-  - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
-      - Other splice-aware alignment tool options: Olego, HISAT2, MapSplice, ABMapper, Passion, BLAT, RUM ...
-      - Other alignment tools that disregard isoforms: BWA, Bowtie2 ...
-  - Use Rsubread to [align the reads](BulkRNASeq/AlignmentCountingTCell.Rmd)
-    - **Why align?** To pinpoint the specific location on the human genome from which our reads originated
-  - Use Qualimap to perform [quality assurance](BulkRNASeq/Qualimap_QC.sh) on the aligned reads
-  - Use [MultiQC](BulkRNASeq/multiqc_QC.sh) to harmonize all QC and alignment metadata from FastQC, STAR, Qualimap, and other [tools](https://multiqc.info/modules/)
-  - Use GenomicAlignments for aligned reads to [obtain the gene-level or exon-level quantification](BulkRNASeq/AlignmentCountingTCell.Rmd)
-  - Use featureCounts for aligned reads to [count the fragments](BulkRNASeq/featureCounts.sh)
-  - [Recommend] Use Salmon for unaligned reads to [obtain the transcript-level quantification](BulkRNASeq/Salmon_quant.sh)
-    - **Why unalign?** To speed up the counting process of reads
-    - Next step: Use tximport to aggregate transcript-level quantification to the gene level
-  - [Perform differential gene expression analysis](BulkRNASeq/DEAnalysisTCell.Rmd)
-  - [Perform principal component analysis, heatmap, and clustering](BulkRNASeq/PCAHeatmapClusteringTissue.Rmd)
-  - [Perform gene set enrichment analysis](BulkRNASeq/GeneSetTCell.Rmd)
-
-<hr>
 
 ### Analyze proteomics data
 
 - A quick start from [loading an online spectrum, performing peak quality control, annotating peaks, to visualizing the annotated peaks](Proteomics/spectrum_utils/0_Quick_Start.py)
 
-*Under Active Construction*
 
 <hr>
 
-## Conceptual aspect
+## Conceptual lens
 
 - [High level multi-omics idea](HighLevelIdea_MultiOmics.md)
 - [Case-control design](CaseControl_Design.md)
