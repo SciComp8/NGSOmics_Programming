@@ -4,9 +4,9 @@ This repository houses conceptual viewpoints, coding practice, assignment/compet
 
 ## Features
 
-* [ATAC-seq data analysis](#Analyze-ATAC-seq-data)
 * [Bulk RNA-seq data analysis](#Analyze-bulk-RNA-seq-data)
 * [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
+* [ATAC-seq data analysis](#Analyze-ATAC-seq-data)
 * [Multi-omics idea](HighLevelIdea_MultiOmics.md)
 * [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
 
@@ -29,6 +29,33 @@ This repository houses conceptual viewpoints, coding practice, assignment/compet
   - [Perform principal component analysis, heatmap, and clustering](BulkRNASeq/PCAHeatmapClusteringTissue.Rmd)
   - [Perform gene set enrichment analysis](BulkRNASeq/GeneSetTCell.Rmd)
   - Achieve cell-type resolution in bulk RNA-Seq through deconvolution techniques (*Under Active Construction*)
+
+<hr>
+
+### Analyze single cell RNA-seq data
+- A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py)
+- If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
+- As inputs are `fastq` files, we can ...
+  - Run FastQC to [evaluate sequence quality and content](FastQC/Run_FastQC.sh)
+  - Use Trim Galore to [trim reads](FastQC/Trim_Read.sh) if we spot unexpected low-quality base calls/adaptor contamination
+  - Re-run FastQC to [re-evaluate sequence quality and content](FastQC/Run_FastQC.sh)
+  - If single-cell RNA-seq data is generated from the plate-based protocol, we can ...
+    - Use STAR to perform alignment and FeatureCounts to generate the count matrix
+  - Else if single-cell RNA-seq data is generated from the droplet-based protocol, we can ...
+    - Use kb-python package to perform [pseudo sequence alignment and generate the count matrix](SingleCellRNASeq/kb-python)
+    - Use Cell Ranger pipelines to perform [sequence alignment and generate the count matrix](SingleCellRNASeq/CellRanger/cellranger_count.sh)
+- After having the `feature-barcode matrices` at hand, we can ...
+  - Use Scanpy workflow to perform [quality assurance, cell clustering, marker gene detection for cell identities](SingleCellRNASeq/Scanpy/PBMC), and [trajectory inference](SingleCellRNASeq/Scanpy/Bone_Marrow)
+  - Use Seurat workflow to perform quality assurance, cell clustering, and marker gene detection for cell identities [case 1](SingleCellRNASeq/Seurat/scRNAseq_analysis_full.Rmd) | [case 2](SingleCellRNASeq/Seurat/SkinCell.Rmd)
+    - If we observe the factor-specific clustering and want cells of the same cell type cluster together across single/multiple confounding factors, we can use canonical correlation analysis or Harmony (suitable for complicated confounding effects) to [integrate](SingleCellRNASeq/Seurat/scRNAseq_analysis_full.Rmd) cells
+    - We can leverage SingleR or ScType to partially or fully automate cell-type identification
+      - Other options of automating cell-type identification by mapping to references and then transfering labels: scArches, Symphony
+  - Use Bioconductor packages to [perform single cell RNA-Seq data analysis](SingleCellRNASeq/Bioconductor/BioconductorSkinCell.Rmd)
+  - Generate [pseudobulk](SingleCellRNASeq/Scanpy/Pseudobulk.py), which aggregates the gene expression levels specific to each cell type within an individual
+  - Perform pseudobulk-based differentially gene expression analysis in [edgeR](SingleCellRNASeq/Scanpy/scRNAseq_DE_Part1.ipynb) or [DESeq2](SingleCellRNASeq/Bioconductor/Pseudobulk_DE.Rmd)
+  - Use bulk RNAseq-based pathway analysis tools (e.g., clusterProfiler, GSEA, GSVA) or single cell RNAseq-based Pagoda2 to evaluate if a predefined set of genes shows statistically significant and consistent variations between biological conditions
+  - Use scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen)  
+- Learn [cutting-edge](Science_Reading/scRNAseq.md) single-cell RNA-seq data analyses
 
 <hr>
 
@@ -60,34 +87,6 @@ This repository houses conceptual viewpoints, coding practice, assignment/compet
   - [Transfer the cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
 
 <hr>
-
-### Analyze single cell RNA-seq data
-- A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py)
-- If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
-- As inputs are `fastq` files, we can ...
-  - Run FastQC to [evaluate sequence quality and content](FastQC/Run_FastQC.sh)
-  - Use Trim Galore to [trim reads](FastQC/Trim_Read.sh) if we spot unexpected low-quality base calls/adaptor contamination
-  - Re-run FastQC to [re-evaluate sequence quality and content](FastQC/Run_FastQC.sh)
-  - If single-cell RNA-seq data is generated from the plate-based protocol, we can ...
-    - Use STAR to perform alignment and FeatureCounts to generate the count matrix
-  - Else if single-cell RNA-seq data is generated from the droplet-based protocol, we can ...
-    - Use kb-python package to perform [pseudo sequence alignment and generate the count matrix](SingleCellRNASeq/kb-python)
-    - Use Cell Ranger pipelines to perform [sequence alignment and generate the count matrix](SingleCellRNASeq/CellRanger/cellranger_count.sh)
-- After having the `feature-barcode matrices` at hand, we can ...
-  - Use Scanpy workflow to perform [quality assurance, cell clustering, marker gene detection for cell identities](SingleCellRNASeq/Scanpy/PBMC), and [trajectory inference](SingleCellRNASeq/Scanpy/Bone_Marrow)
-  - Use Seurat workflow to perform quality assurance, cell clustering, and marker gene detection for cell identities [case 1](SingleCellRNASeq/Seurat/scRNAseq_analysis_full.Rmd) | [case 2](SingleCellRNASeq/Seurat/SkinCell.Rmd)
-    - If we observe the factor-specific clustering and want cells of the same cell type cluster together across single/multiple confounding factors, we can use canonical correlation analysis or Harmony (suitable for complicated confounding effects) to [integrate](SingleCellRNASeq/Seurat/scRNAseq_analysis_full.Rmd) cells
-    - We can leverage SingleR or ScType to partially or fully automate cell-type identification
-      - Other options of automating cell-type identification by mapping to references and then transfering labels: scArches, Symphony
-  - Use Bioconductor packages to [perform single cell RNA-Seq data analysis](SingleCellRNASeq/Bioconductor/BioconductorSkinCell.Rmd)
-  - Generate [pseudobulk](SingleCellRNASeq/Scanpy/Pseudobulk.py), which aggregates the gene expression levels specific to each cell type within an individual
-  - Perform pseudobulk-based differentially gene expression analysis in [edgeR](SingleCellRNASeq/Scanpy/scRNAseq_DE_Part1.ipynb) or [DESeq2](SingleCellRNASeq/Bioconductor/Pseudobulk_DE.Rmd)
-  - Use bulk RNAseq-based pathway analysis tools (e.g., clusterProfiler, GSEA, GSVA) or single cell RNAseq-based Pagoda2 to evaluate if a predefined set of genes shows statistically significant and consistent variations between biological conditions
-  - Use scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen)  
-- Learn [cutting-edge](Science_Reading/scRNAseq.md) single-cell RNA-seq data analyses
-
-<hr>
-
 
 ### Analyze proteomics data
 
