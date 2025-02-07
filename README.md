@@ -33,7 +33,7 @@ This repository houses conceptual viewpoints, coding practice, assignment/compet
 <hr>
 
 ### Analyze single cell RNA-seq data
-- A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py)
+- A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py) | [Why apply pipelines?](https://github.com/SciComp8/NGSOmics_Programming/blob/main/SingleCellRNASeq/Scanpy/Why_Pipeline.md)
 - If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
 - As inputs are `fastq` files, we can ...
   - Run FastQC to [evaluate sequence quality and content](FastQC/Run_FastQC.sh)
