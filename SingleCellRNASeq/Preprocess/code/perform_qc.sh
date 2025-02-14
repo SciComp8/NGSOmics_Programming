@@ -6,7 +6,7 @@ read -p "$name, do you want to 1) manually specify or 2) tell me the path of you
         read -p "$name, please enter the SRA ID(s) of your interest: e.g., SRR18743674,SRR18743675,SRR18743676,SRR18743677,SRR18743678: " sra_id
     elif [ $sra_id_choice = 2 ] 
     then
-        read -p "$name, please enter the path of your folder that contains accession list file(s): e.g., /Users/XXX/Documents/WCM_Project/202307_SingleCell/Kallisto_Bustools/sra_id: " sra_id_path
+        read -p "$name, please enter the path of your folder that contains accession list file(s): e.g., /Users/XXX/Documents/Project/202307_SingleCell/Kallisto_Bustools/sra_id: " sra_id_path
         sra_id=$(bash organize_sra_ids.sh $sra_id_path)
         echo -e "Here are all your SRA IDs. \n$sra_id"
     fi
