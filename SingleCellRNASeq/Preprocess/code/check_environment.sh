@@ -12,7 +12,7 @@ then
             exit
         elif [ $sra_choice = 2 ] 
         then
-            read -p "$name, please enter the path of your SRA toolkit: e.g., /Users/ali4006/Documents/WCM_Project/202307_SingleCell/SRATool/sratoolkit.3.0.5-mac64/bin: " sra_path
+            read -p "$name, please enter the path of your SRA toolkit: e.g., /Users/XXX/Documents/Project/202307_SingleCell/SRATool/sratoolkit.3.0.5-mac64/bin: " sra_path
             echo "export PATH=$PATH:/$sra_path" > ../check_b/.bashrc
             source ../check_b/.bashrc
             echo -e "$name, your SRA toolkit is executable.\n"
