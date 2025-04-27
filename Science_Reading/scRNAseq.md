@@ -1,3 +1,12 @@
+## Methodology progress in 2025
+
+**Mapping cells through time and space with moscot**
+
+Klein, D., Palla, G., Lange, M. et al. Mapping cells through time and space with moscot. Nature 638, 1065–1075 (2025). https://doi.org/10.1038/s41586-024-08453-2
+
+> "Single-cell genomic technologies enable the multimodal profiling of millions of cells across temporal and spatial dimensions. However, experimental limitations hinder the comprehensive measurement of cells under native temporal dynamics and in their native spatial tissue niche. Optimal transport has emerged as a powerful tool to address these constraints and has facilitated the recovery of the original cellular context1,2,3,4. Yet, most optimal transport applications are unable to incorporate multimodal information or scale to single-cell atlases. Here we introduce multi-omics single-cell optimal transport (moscot), a scalable framework for optimal transport in single-cell genomics that supports multimodality across all applications. We demonstrate the capability of moscot to efficiently reconstruct developmental trajectories of 1.7 million cells from mouse embryos across 20 time points. To illustrate the capability of moscot in space, we enrich spatial transcriptomic datasets by mapping multimodal information from single-cell profiles in a mouse liver sample and align multiple coronal sections of the mouse brain. We present moscot.spatiotemporal, an approach that leverages gene-expression data across both spatial and temporal dimensions to uncover the spatiotemporal dynamics of mouse embryogenesis. We also resolve endocrine-lineage relationships of delta and epsilon cells in a previously unpublished mouse, time-resolved pancreas development dataset using paired measurements of gene expression and chromatin accessibility. Our findings are confirmed through experimental validation of NEUROD2 as a regulator of epsilon progenitor cells in a model of human induced pluripotent stem cell islet cell differentiation. Moscot is available as open-source software, accompanied by extensive documentation."
+
+
 ## Methodology progress in 2024
 
 **Integration of spatial and single-cell data across modalities with weakly linked features**
