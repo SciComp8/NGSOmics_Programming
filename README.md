@@ -97,7 +97,7 @@ This repository houses conceptual viewpoints, coding practice, assignment/compet
 <hr>
 
 ## Conceptual lens
-
+- [Methodology progress in single cell genomics](Science_Reading/scRNAseq.md)
 - [High level multi-omics idea](HighLevelIdea_MultiOmics.md)
 - [Case-control design](CaseControl_Design.md)
 - [Graph neural networks in biomedical studies](Reference/Graph_Neural_Network.md)
