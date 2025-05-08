@@ -2,7 +2,7 @@
 
 This repository houses conceptual viewpoints, coding practice, assignment/competition solutions based on the materials from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
-*Last updated: 27 Apr 2025*
+*Last updated: 8 May 2025*
 
 ## Features
 
@@ -34,6 +34,7 @@ This repository houses conceptual viewpoints, coding practice, assignment/compet
 <hr>
 
 ### Analyze single cell RNA-seq data
+- [Single Cell Genomics Day](https://satijalab.org/scgd25/)
 - A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py) | [Why apply pipelines?](https://github.com/SciComp8/NGSOmics_Programming/blob/main/SingleCellRNASeq/Scanpy/Why_Pipeline.md)
 - If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
 - As inputs are `fastq` files, we can ...
