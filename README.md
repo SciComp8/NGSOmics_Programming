@@ -1,8 +1,8 @@
-# Quantitative Biomedicine ✨
+# OMICS ✨
 
-This repository houses conceptual viewpoints, coding practice, assignment/competition solutions based on the materials from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
+This repository houses conceptual perspectives, coding practice, assignment/competition solutions based on the materials from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
-*Last updated: 8 May 2025*
+*Last updated: 1 Jun 2025*
 
 ## Features
 
