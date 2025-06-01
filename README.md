@@ -90,9 +90,12 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 <hr>
 
-### Analyze proteomics data
-
+### Analyze other omics data
+#### Proteomics
 - A quick start from [loading an online spectrum, performing peak quality control, annotating peaks, to visualizing the annotated peaks](Proteomics/spectrum_utils/0_Quick_Start.py)
+
+#### Metabolomics
+- [MetaboAnalystR](https://www.metaboanalyst.ca/docs/RTutorial.xhtml)
 
 
 <hr>
