@@ -35,6 +35,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 ### Analyze single cell RNA-seq data
 - [Single Cell Genomics Day](https://satijalab.org/scgd25/)
+- [*Frontier*](Science_Reading/scRNAseq.md) single-cell RNA-seq data analyses
+- [Single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
 - A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py) | [Why apply pipelines?](https://github.com/SciComp8/NGSOmics_Programming/blob/main/SingleCellRNASeq/Scanpy/Why_Pipeline.md)
 - If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
 - As inputs are `fastq` files, we can ...
@@ -57,7 +59,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Perform pseudobulk-based differentially gene expression analysis in [edgeR](SingleCellRNASeq/Scanpy/scRNAseq_DE_Part1.ipynb) or [DESeq2](SingleCellRNASeq/Bioconductor/Pseudobulk_DE.Rmd)
   - Use bulk RNAseq-based pathway analysis tools (e.g., clusterProfiler, GSEA, GSVA) or single cell RNAseq-based Pagoda2 to evaluate if a predefined set of genes shows statistically significant and consistent variations between biological conditions
   - Use scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen)  
-- [*Frontier*](Science_Reading/scRNAseq.md) single-cell RNA-seq data analyses
+
 
 <hr>
 
