@@ -104,7 +104,6 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 <hr>
 
 ## Conceptual lens
-- [Methodology progress in single cell genomics](Science_Reading/scRNAseq.md)
 - [High level multi-omics idea](HighLevelIdea_MultiOmics.md)
 - [Case-control design](CaseControl_Design.md)
 
