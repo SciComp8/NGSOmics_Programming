@@ -11,7 +11,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 ## Technical procedures
 ### Analyze single cell RNA-seq data
-- [Single Cell Genomics Day](https://satijalab.org/scgd25/)
+- [2025 single cell genomics day](https://satijalab.org/scgd25/)
 - [*Frontier*](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - [Single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
 - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
