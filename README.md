@@ -8,7 +8,6 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 * [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
 * [Bulk RNA-seq data analysis](#Analyze-bulk-RNA-seq-data)
 * [ATAC-seq data analysis](#Analyze-ATAC-seq-data)
-* [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
 
 ## Technical procedures
 ### Analyze single cell RNA-seq data
@@ -41,6 +40,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 <hr>
 
 ### Analyze bulk RNA-seq data
+  - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
   - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
   - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
       - Other splice-aware alignment tool options: Olego, HISAT2, MapSplice, ABMapper, Passion, BLAT, RUM ...
