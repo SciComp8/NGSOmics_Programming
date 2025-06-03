@@ -11,7 +11,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 ## Technical procedures
 ### Analyze single cell RNA-seq data
-- [Introduction to single cell RNA-seq data](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
+- [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
 - [2025 single cell genomics day](https://satijalab.org/scgd25/)
 - [*Frontier*](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - [Single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
