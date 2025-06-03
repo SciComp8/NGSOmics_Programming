@@ -102,13 +102,13 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 #### Metabolomics
 - [MetaboAnalystR](https://www.metaboanalyst.ca/docs/RTutorial.xhtml)
 
-
 <hr>
 
 ## Conceptual lens
 - [High level multi-omics idea](HighLevelIdea_MultiOmics.md)
 - [Case-control design](CaseControl_Design.md)
 
+<hr>
 
 ## Citation
 
