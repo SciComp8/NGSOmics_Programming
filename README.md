@@ -7,7 +7,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 ## Features
 * [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
 * [Bulk RNA-seq data analysis](#Analyze-bulk-RNA-seq-data)
-* [ATAC-seq data analysis](#Analyze-ATAC-seq-data)
+* [Single cell ATAC-seq data analysis](#Analyze-single-cell-ATAC-seq-data)
+* [Bulk ATAC-seq data analysis](#Analyze-bulk-ATAC-seq-data)
 
 ## Technical procedures
 ### Analyze single cell RNA-seq data
@@ -63,7 +64,12 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 <hr>
 
-### Analyze ATAC-seq data
+### Analyze single cell ATAC-seq data
+  - [Profile distinct open chromatin regions across the genome at single-cell resolution with Epi ATAC](https://www.10xgenomics.com/support/epi-atac)
+
+<hr>
+
+### Analyze bulk ATAC-seq data
   - [Practical guide](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3)
   - Run [ENCODE ATAC-seq pipeline](https://github.com/ScienceComputing/atac-seq-pipeline/blob/master/README.md) to perform alignment, quality assurance, peaking calling, and signal track generation
   - If we're interested in inspecting every step in each analytical phase, or even leveraging advanced/unique features of other tools that the current pipeline ignores, ...
