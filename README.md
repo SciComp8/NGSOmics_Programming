@@ -39,7 +39,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - Review [2025 single cell genomics day](https://satijalab.org/scgd25/)
 - Learn [frontier](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - Identify [single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
-- Define [spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data)
+- Define [spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data) | [spacexr](https://www.10xgenomics.com/analysis-guides/integrating-10x-visium-and-chromium-data-with-r)
 - Capture [gene expression and chromatin accessibility together in a single cell](https://www.10xgenomics.com/support/epi-multiome)
 
 <hr>
