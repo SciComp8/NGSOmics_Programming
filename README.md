@@ -10,7 +10,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 * [Single cell ATAC-seq data analysis](#Analyze-single-cell-ATAC-seq-data)
 * [Bulk ATAC-seq data analysis](#Analyze-bulk-ATAC-seq-data)
 
-## Technical procedures
+## Technical lens
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
 - [2025 single cell genomics day](https://satijalab.org/scgd25/)
