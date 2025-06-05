@@ -114,7 +114,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 #### Metabolomics
 - [MetaboAnalystR](https://www.metaboanalyst.ca/docs/RTutorial.xhtml)
 
-### Spatial transcriptomics
+#### Spatial transcriptomics
 - Profile the whole transcriptome from Formalin-Fixed Paraffin-Embedded tissue sections with [Visium](https://www.10xgenomics.com/support/spatial-gene-expression-ffpe)
 - Profile subcellular-level RNA targets with [Xenium](https://www.10xgenomics.com/support/in-situ-gene-expression)
 
