@@ -36,8 +36,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Perform pseudobulk-based differentially gene expression analysis in [edgeR](SingleCellRNASeq/Scanpy/scRNAseq_DE_Part1.ipynb) or [DESeq2](SingleCellRNASeq/Bioconductor/Pseudobulk_DE.Rmd)
   - Use bulk RNAseq-based pathway analysis tools (e.g., clusterProfiler, GSEA, GSVA) or single cell RNAseq-based Pagoda2 to evaluate if a predefined set of genes shows statistically significant and consistent variations between biological conditions
   - Use scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen)  
-- [2025 single cell genomics day](https://satijalab.org/scgd25/)
-- [Frontier](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
+- Review [2025 single cell genomics day](https://satijalab.org/scgd25/)
+- Learn [frontier](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - [Identify single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
 - [Define spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data)
 - [Capture gene expression and chromatin accessibility together in a single cell](https://www.10xgenomics.com/support/epi-multiome)
