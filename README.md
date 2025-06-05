@@ -46,7 +46,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 <hr>
 
 ### Analyze bulk RNA-seq data
-  - Single cell or single nuclei RNA-seq cost 10–30 times more than bulk RNA-seq, making large-scale adoption in clinical settings challenging. We can achieve cell-type resolution in bulk RNA-Seq through deconvolution techniques like [SQUID](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6)
+  - Single cell or single nuclei RNA-seq costs 10–30 times more than bulk RNA-seq, making large-scale adoption in clinical settings challenging. We can achieve cell-type resolution in bulk RNA-Seq through deconvolution techniques like [SQUID](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6)
   - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
   - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
   - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
