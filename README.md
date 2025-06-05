@@ -2,7 +2,7 @@
 
 This repository houses conceptual perspectives, coding practice, assignment/competition solutions based on the materials from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
-*Last updated: 3 Jun 2025*
+*Last updated: 5 Jun 2025*
 
 ## Features
 * [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
