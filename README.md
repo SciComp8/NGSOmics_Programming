@@ -16,6 +16,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - [2025 single cell genomics day](https://satijalab.org/scgd25/)
 - [*Frontier*](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - [Single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
+- [Define spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data)
 - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
 - A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py) | [Why apply pipelines?](https://github.com/SciComp8/NGSOmics_Programming/blob/main/SingleCellRNASeq/Scanpy/Why_Pipeline.md)
 - If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
