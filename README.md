@@ -40,6 +40,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - [Frontier](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - [Single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
 - [Define spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data)
+- [Capture gene expression and chromatin accessibility together in a single cell](https://www.10xgenomics.com/support/epi-multiome)
 
 <hr>
 
