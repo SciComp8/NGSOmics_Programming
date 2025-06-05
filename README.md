@@ -66,6 +66,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 ### Analyze single cell ATAC-seq data
   - [Profile distinct open chromatin regions across the genome at single-cell resolution with Epi ATAC](https://www.10xgenomics.com/support/epi-atac)
+    - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
+    - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
 
 <hr>
 
