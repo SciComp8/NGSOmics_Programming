@@ -14,6 +14,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
 - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
+- Profile single cell transcriptome with [Chromium Single Cell Universal 3' Gene Expression](https://www.10xgenomics.com/support/universal-three-prime-gene-expression)
 - A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py) | [Why apply pipelines?](https://github.com/SciComp8/NGSOmics_Programming/blob/main/SingleCellRNASeq/Scanpy/Why_Pipeline.md)
 - If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
 - As inputs are `fastq` files, we can ...
