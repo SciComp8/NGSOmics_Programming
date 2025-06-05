@@ -38,7 +38,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Use scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen)  
 - [2025 single cell genomics day](https://satijalab.org/scgd25/)
 - [Frontier](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
-- [Single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
+- [Identify single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
 - [Define spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data)
 - [Capture gene expression and chromatin accessibility together in a single cell](https://www.10xgenomics.com/support/epi-multiome)
 
