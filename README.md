@@ -37,7 +37,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Use bulk RNAseq-based pathway analysis tools (e.g., clusterProfiler, GSEA, GSVA) or single cell RNAseq-based Pagoda2 to evaluate if a predefined set of genes shows statistically significant and consistent variations between biological conditions
   - Use scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen)  
 - [2025 single cell genomics day](https://satijalab.org/scgd25/)
-- [*Frontier*](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
+- [Frontier](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - [Single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
 - [Define spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data)
 
