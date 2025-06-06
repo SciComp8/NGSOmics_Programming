@@ -2,7 +2,7 @@
 
 This repository houses conceptual perspectives, coding practice, assignment/competition solutions based on the materials from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
-*Last updated: 5 Jun 2025*
+*Last updated: 6 Jun 2025*
 
 ## Features
 * [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
@@ -72,6 +72,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
     - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
     - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
     - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
+    - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
 
 <hr>
 
@@ -100,7 +101,6 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
       - Use MotifDb/JASPAR2022 and seqLogo/ [recommend] ggseqlogo to [search and visualize motifs](ATACSeq/Search_Visualize_Motif.Rmd)
       - Use motifmatchr (R wrapper of MOODS) to [map peaks to motifs](ATACSeq/IdentifyMotif.Rmd), DNA sequences preferred by transcription factors
       - Use chromVAR to [analyze differences in motifs across conditions](ATACSeq/Detect_Difference_Motif.Rmd)
-  - [Transfer the cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
 
 <hr>
 
