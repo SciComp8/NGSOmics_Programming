@@ -1,5 +1,5 @@
 # Overview of a case-control study
-This retrospective study starts with the final health outcome and then traces back to identify potential causes that could have led to this outcome
+This retrospective study starts with the final health outcome and then traces back to identify potential causes that could have led to this health outcome.
 
 # Important historical case-control studies
 - 1950's: [cigarette smoking and lung cancer](https://www.thelancet.com/pdfs/journals/lanonc/PIIS1470204509704012.pdf)
