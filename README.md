@@ -9,7 +9,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 * [Bulk RNA-seq analysis](#Analyze-bulk-RNA-seq-data)
 * [Single cell ATAC-seq analysis](#Analyze-single-cell-ATAC-seq-data)
 * [Bulk ATAC-seq analysis](#Analyze-bulk-ATAC-seq-data)
-* [Genomics/proteomics/metabolomics/spatial transcriptomics analysis](#Analyze-other-omics-data)
+* [Genomics | proteomics | metabolomics | spatial transcriptomics analysis](#Analyze-other-omics-data)
 
 ## Technical lens
 ### Analyze single cell RNA-seq data
