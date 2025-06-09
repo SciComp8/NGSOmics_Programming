@@ -5,10 +5,11 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 *Last updated: 6 Jun 2025*
 
 ## Features
-* [Single cell RNA-seq data analysis](#Analyze-single-cell-RNA-seq-data)
-* [Bulk RNA-seq data analysis](#Analyze-bulk-RNA-seq-data)
-* [Single cell ATAC-seq data analysis](#Analyze-single-cell-ATAC-seq-data)
-* [Bulk ATAC-seq data analysis](#Analyze-bulk-ATAC-seq-data)
+* [Single cell RNA-seq analysis](#Analyze-single-cell-RNA-seq-data)
+* [Bulk RNA-seq analysis](#Analyze-bulk-RNA-seq-data)
+* [Single cell ATAC-seq analysis](#Analyze-single-cell-ATAC-seq-data)
+* [Bulk ATAC-seq analysis](#Analyze-bulk-ATAC-seq-data)
+* [Genomics/proteomics/metabolomics/spatial transcriptomics analysis](#Analyze-other-omics-data)
 
 ## Technical lens
 ### Analyze single cell RNA-seq data
