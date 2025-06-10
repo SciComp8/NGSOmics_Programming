@@ -107,7 +107,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 ### Analyze other omics data
 #### Whole genome sequencing
-- **Data quality control and preprocessing**
+- **Raw read quality control and preprocessing**
 - **Alignment and variant calling**
 - **Genome assembly and annotation**
 - **Downstream analysis**
