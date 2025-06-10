@@ -1,6 +1,6 @@
 # OMICS ✨
 
-This repository houses conceptual perspectives, coding practice, assignment/competition solutions based on the materials from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
+This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
 *Last updated: 9 Jun 2025*
 
