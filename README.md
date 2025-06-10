@@ -108,6 +108,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 ### Analyze other omics data
 #### Whole genome sequencing
 - **Raw read quality control and preprocessing**
+  - Run [fastp](https://github.com/OpenGene/fastp) to remove low-quality reads (low average quality score), trim adapters, and eliminate poly-G tails in Illumina NovaSeq/NextSeq data
 - **Alignment and variant calling**
 - **Genome assembly and annotation**
 - **Downstream analysis**
