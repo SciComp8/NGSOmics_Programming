@@ -106,8 +106,12 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 <hr>
 
 ### Analyze other omics data
-#### Genomics
-- [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
+#### Whole genome sequencing
+- **Data quality control and preprocessing**
+- **Alignment and variant calling**
+- **Genome assembly and annotation**
+- **Downstream analysis**
+  - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
 
 #### Proteomics
 - A quick start from [loading an online spectrum, performing peak quality control, annotating peaks, to visualizing the annotated peaks](Proteomics/spectrum_utils/0_Quick_Start.py)
