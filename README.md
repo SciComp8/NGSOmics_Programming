@@ -1,5 +1,4 @@
-# OMICS ✨ 
-<img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="20" height="20">
+# OMICS ✨ <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="30" height="30">
 
 
 This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
