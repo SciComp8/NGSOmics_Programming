@@ -1,4 +1,6 @@
-# OMICS ✨
+# OMICS ✨ 
+
+![alt text](https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png) "DNA")
 
 This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
