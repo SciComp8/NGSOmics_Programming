@@ -13,7 +13,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 * [Proteomics | metabolomics | spatial transcriptomics analysis](#Analyze-other-omics-data)
 
 ## Technical lens
-#### Whole genome sequencing
+### Analyze whole genome sequencing data
 
 *Under Construction*
 
