@@ -133,7 +133,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 ## Conceptual lens
 - [High level multi-omics idea](HighLevelIdea_MultiOmics.md)
-- [Case-control design](CaseControl_Design.md)
+- [Case-control design](StudyDesign/CaseControl_Design.md)
 
 <hr>
 
