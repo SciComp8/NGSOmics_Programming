@@ -10,9 +10,23 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 * [Bulk RNA-seq analysis](#Analyze-bulk-RNA-seq-data)
 * [Single cell ATAC-seq analysis](#Analyze-single-cell-ATAC-seq-data)
 * [Bulk ATAC-seq analysis](#Analyze-bulk-ATAC-seq-data)
-* [Genomics | proteomics | metabolomics | spatial transcriptomics analysis](#Analyze-other-omics-data)
+* [Proteomics | metabolomics | spatial transcriptomics analysis](#Analyze-other-omics-data)
 
 ## Technical lens
+#### Whole genome sequencing
+
+*Under Construction*
+
+- **Raw read quality control and preprocessing**
+  - Run [fastp](https://github.com/OpenGene/fastp) to remove reads with low average quality score, trim adapters, and eliminate [poly-G tails](https://speciationgenomics.github.io/fastp/) in Illumina NovaSeq/NextSeq data
+  - Run [MultiQC](https://seqera.io/multiqc/) to evaluate pre- and post-trimming metrics
+  - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
+  - Check sequencing depth (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
+- **Alignment and variant calling**
+- **Genome assembly and annotation**
+- **Downstream analysis**
+  - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
+
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
 - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
@@ -107,17 +121,6 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 <hr>
 
 ### Analyze other omics data
-#### Whole genome sequencing
-- **Raw read quality control and preprocessing**
-  - Run [fastp](https://github.com/OpenGene/fastp) to remove reads with low average quality score, trim adapters, and eliminate [poly-G tails](https://speciationgenomics.github.io/fastp/) in Illumina NovaSeq/NextSeq data
-  - Run [MultiQC](https://seqera.io/multiqc/) to evaluate pre- and post-trimming metrics
-  - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
-  - Check sequencing depth (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
-- **Alignment and variant calling**
-- **Genome assembly and annotation**
-- **Downstream analysis**
-  - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
-
 #### Proteomics
 - A quick start from [loading an online spectrum, performing peak quality control, annotating peaks, to visualizing the annotated peaks](Proteomics/spectrum_utils/0_Quick_Start.py)
 
