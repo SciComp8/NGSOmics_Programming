@@ -1,7 +1,7 @@
 # OMICS <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="45" height="45">
 
 
-This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
+This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of cutting-edge and classic computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
 *Last updated: 13 Jun 2025*
 
