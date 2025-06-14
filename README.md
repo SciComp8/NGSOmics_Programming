@@ -21,7 +21,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Run [fastp](https://github.com/OpenGene/fastp) to remove reads with low average quality score, trim adapters, and eliminate [poly-G tails](https://speciationgenomics.github.io/fastp/) in Illumina NovaSeq/NextSeq data
   - Run [MultiQC](https://seqera.io/multiqc/) to evaluate pre- and post-trimming metrics
   - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
-  - Check sequencing depth (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
+  - Check [sequencing coverage](https://www.illumina.com/documents/products/technotes/technote_coverage_calculation.pdf) (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
 - **Alignment and variant calling**
   - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
