@@ -34,6 +34,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
 
+<hr>
+
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
 - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
