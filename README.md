@@ -90,17 +90,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
     
 <hr>
 
-### Analyze single cell ATAC-seq data
-  - Profile distinct open chromatin regions across the genome at single-cell resolution with [Epi ATAC](https://www.10xgenomics.com/support/epi-atac)
-  - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
-  - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
-  - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
-  - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
-  - Find DNA motifs linked to differences in single-cell or bulk chromatin accessibility with [chromVAR](https://github.com/GreenleafLab/chromVAR)
-  - Profile somatic mutations with epigenetic alterations at single-cell resolution with [GoT–ChA](https://www.nature.com/articles/s41586-024-07388-y)
-<hr>
-
 ### Analyze bulk ATAC-seq data
+  - [Introduction to transcription regulation](https://www.youtube.com/watch?v=K2gKdFPipv0)
   - [Practical guide](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3)
   - Run [ENCODE ATAC-seq pipeline](https://github.com/ScienceComputing/atac-seq-pipeline/blob/master/README.md) to perform alignment, quality assurance, peaking calling, and signal track generation
   - If we're interested in inspecting every step in each analytical phase, or even leveraging advanced/unique features of other tools that the current pipeline ignores, ...
@@ -125,6 +116,17 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
       - Use MotifDb/JASPAR2022 and seqLogo/ [recommend] ggseqlogo to [search and visualize motifs](ATACSeq/Search_Visualize_Motif.Rmd)
       - Use motifmatchr (R wrapper of MOODS) to [map peaks to motifs](ATACSeq/IdentifyMotif.Rmd), DNA sequences preferred by transcription factors
       - Use chromVAR to [analyze differences in motifs across conditions](ATACSeq/Detect_Difference_Motif.Rmd)
+
+<hr>
+
+### Analyze single cell ATAC-seq data
+  - Profile distinct open chromatin regions across the genome at single-cell resolution with [Epi ATAC](https://www.10xgenomics.com/support/epi-atac)
+  - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
+  - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
+  - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
+  - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
+  - Find DNA motifs linked to differences in single-cell or bulk chromatin accessibility with [chromVAR](https://github.com/GreenleafLab/chromVAR)
+  - Profile somatic mutations with epigenetic alterations at single-cell resolution with [GoT–ChA](https://www.nature.com/articles/s41586-024-07388-y)
 
 <hr>
 
