@@ -25,7 +25,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Alignment and variant calling**
   - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
-  - For SNP/indel/[structural variant](https://gatk.broadinstitute.org/hc/en-us/articles/9022487952155-Structural-variant-SV-discovery) detection: run [Genome Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us)
+  - For SNP/indel detection: run [Genome Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us)
+  - For structural variant detection: run [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of structural variant calls by combining different high-performing variant callers
 - **Genome assembly and annotation**
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
