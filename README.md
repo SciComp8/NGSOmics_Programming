@@ -59,7 +59,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Generate [pseudobulk](SingleCellRNASeq/Scanpy/Pseudobulk.py), which aggregates the gene expression levels specific to each cell type within an individual
   - Perform pseudobulk-based differentially gene expression analysis in [edgeR](SingleCellRNASeq/Scanpy/scRNAseq_DE_Part1.ipynb) or [DESeq2](SingleCellRNASeq/Bioconductor/Pseudobulk_DE.Rmd)
   - Use bulk RNAseq-based pathway analysis tools (e.g., clusterProfiler, GSEA, GSVA) or single cell RNAseq-based Pagoda2 to evaluate if a predefined set of genes shows statistically significant and consistent variations between biological conditions
-  - Use scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen)  
+  - Run scGen to model [perturbation responses](SingleCellRNASeq/Perturbation/scGen); for heterogeneous perturbed cell population, run [CellOT](https://github.com/bunnech/cellot)
 - Review [2025 single cell genomics day](https://satijalab.org/scgd25/)
 - Learn [frontier](Science_Reading/scRNAseq.md) single-cell RNA-seq analytical progress
 - Identify [single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
