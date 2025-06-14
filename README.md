@@ -23,7 +23,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
   - Check sequencing depth (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
 - **Alignment and variant calling**
-  - Human study: [GRCh38](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html) released by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc)
+  - For human study: use [GRCh38](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html) released by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc)
 - **Genome assembly and annotation**
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
