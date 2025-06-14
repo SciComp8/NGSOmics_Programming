@@ -28,7 +28,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - For **SNP/indel** detection: run [Genome Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
   - For **structural variant (SV)** detection: run [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers (e.g., Manta, DELLY, GRIDSS), and then infer shared SV calls
   - For **copy number gains and losses**: run [CNVKit](https://cnvkit.readthedocs.io)
-  - Common variant report file format: [VCF](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format)
+  - Understand common variant report file format: [VCF](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format)
   - Translate a VCF file from its current reference genome build to another build version: run [LiftoverVcf (Picard)](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
 - **Genome assembly and annotation**
 - **Downstream analysis**
