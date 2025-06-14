@@ -23,8 +23,9 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
   - Check sequencing depth (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
 - **Alignment and variant calling**
-  - For human study: use [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) released by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
+  - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
+  - For SNP/indel/[structural variant](https://gatk.broadinstitute.org/hc/en-us/articles/9022487952155-Structural-variant-SV-discovery) detection: run [Genome Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us)
 - **Genome assembly and annotation**
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
