@@ -18,7 +18,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 *Under Construction*
 
 - **Raw read quality control and preprocessing**
-  - Run [fastp](https://github.com/OpenGene/fastp) to remove reads with low average quality score, trim adapters, and eliminate [poly-G tails](https://speciationgenomics.github.io/fastp/) in Illumina NovaSeq/NextSeq data
+  - Run [fastp](https://github.com/OpenGene/fastp) to remove reads with low average quality score, trim [adapters](https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/next-generation-sequencing/dna-sequencing-preparation-illumina.html), and eliminate [poly-G tails](https://speciationgenomics.github.io/fastp/) in Illumina NovaSeq/NextSeq data
   - Run [MultiQC](https://seqera.io/multiqc/) to evaluate pre- and post-trimming metrics
   - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
   - Check [sequencing coverage](https://www.illumina.com/documents/products/technotes/technote_coverage_calculation.pdf) (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
