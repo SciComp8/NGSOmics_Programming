@@ -92,10 +92,11 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 ### Analyze single cell ATAC-seq data
   - Profile distinct open chromatin regions across the genome at single-cell resolution with [Epi ATAC](https://www.10xgenomics.com/support/epi-atac)
-    - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
-    - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
-    - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
-    - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
+  - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
+  - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
+  - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
+  - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
+  - Find DNA motifs linked to differences in single-cell or bulk chromatin accessibility with [chromVAR](https://github.com/GreenleafLab/chromVAR)
 
 <hr>
 
