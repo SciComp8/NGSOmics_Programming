@@ -1,6 +1,6 @@
 ---
 title: "ATAC-Seq Data Analysis with Mouse Tissue Data - Analyze Differences in Motifs across Conditions"
-author: "Anni Liu"
+author: "SciComp8"
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 output: 
   html_document:
