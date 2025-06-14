@@ -26,7 +26,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
   - For SNP/indel detection: run [Genome Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us)
-  - For structural variant (SV) detection: run [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers, and conservatively infer the common SVs
+  - For structural variant (SV) detection: run [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers, and conservatively infer the shared SV calls
+  - For copy number gains and losses: run [CNVKit](https://cnvkit.readthedocs.io)
 - **Genome assembly and annotation**
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
