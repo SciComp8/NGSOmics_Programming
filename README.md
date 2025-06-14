@@ -97,7 +97,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
   - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
   - Find DNA motifs linked to differences in single-cell or bulk chromatin accessibility with [chromVAR](https://github.com/GreenleafLab/chromVAR)
-
+  - Profile somatic mutations with epigenetic alterations at single-cell resolution with [GoT–ChA](https://www.nature.com/articles/s41586-024-07388-y)
 <hr>
 
 ### Analyze bulk ATAC-seq data
