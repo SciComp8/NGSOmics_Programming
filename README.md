@@ -24,6 +24,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Check sequencing depth (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
 - **Alignment and variant calling**
   - For human study: use [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) released by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
+  - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
 - **Genome assembly and annotation**
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
