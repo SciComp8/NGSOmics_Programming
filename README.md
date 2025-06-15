@@ -39,6 +39,9 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
 
+- **Leverage cloud-based computational resources for scalable processing**
+  - [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
+
 <hr>
 
 ### Analyze single cell RNA-seq data
