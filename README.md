@@ -41,8 +41,9 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Downstream analysis**
   - Assess the relationship between genotype and gene expression with [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL), which operates linear regression with [additive genotype effect](https://plato.stanford.edu/entries/heritability/#HeriPopuGene)/[ANOVA genotype effect](https://www.fao.org/4/y4391e/y4391e07.htm)
 
-- **Scalable processing**
+- **Scalable and reproducible processing**
   - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
+  - Make WGS analysis workflow reproducible with Python-based [snakemake](https://snakemake.readthedocs.io/en/stable/)
 
 <hr>
 
