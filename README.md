@@ -25,15 +25,16 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Alignment and variant calling**
   - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
-  - For **SNP/indel** detection: run [Genome Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
+  - For **SNP/indel** detection: run [Genome Analysis Toolkit (GATK)](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
   - For **structural variant (SV)** detection: run [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers (e.g., Manta, DELLY, GRIDSS), and then infer shared SV calls
   - For **copy number gains and losses** detection: run [CNVKit](https://cnvkit.readthedocs.io)
   - Understand common variant report file format: [VCF](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format)
   - Translate a VCF file from its current reference genome build to another build version: run [LiftoverVcf (Picard)](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
-  - Common variants may less likely cause rare or highly [penetrant](https://link.springer.com/article/10.1007/s00439-013-1331-2) diseases: exclude variants with allele frequency > 1% in [Genome Aggregation Database (gnomAD)](https://gnomad.broadinstitute.org/).
-  - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants 
+  - Common variants may less likely cause rare or highly [penetrant](https://link.springer.com/article/10.1007/s00439-013-1331-2) diseases: exclude variants with allele frequency > 1% in [Genome Aggregation Database (gnomAD)](https://gnomad.broadinstitute.org/)
  
-- **Genome assembly and annotation**
+- **Genome annotation**
+  - Annotate and assess how genetic variants affect genes and proteins, including specific changes to amino acids with GATK-compatible [SnpEff](http://pcingola.github.io/SnpEff/snpeff/introduction/)
+  - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants 
 - **Downstream analysis**
   - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
 
