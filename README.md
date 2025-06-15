@@ -3,7 +3,7 @@
 
 This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of cutting-edge and classic computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
 
-*Last updated: 13 Jun 2025*
+*Last updated: 15 Jun 2025*
 
 ## Features
 * [Single cell RNA-seq analysis](#Analyze-single-cell-RNA-seq-data)
@@ -25,9 +25,10 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Alignment and variant calling**
   - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
-  - For **SNP/indel** detection: run [Genome Analysis Toolkit (GATK)](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
-  - For **structural variant (SV)** detection: run [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers (e.g., Manta, DELLY, GRIDSS), and then infer shared SV calls
-  - For **copy number gains and losses** detection: run [CNVKit](https://cnvkit.readthedocs.io)
+  - Detect **SNP/indel** with [Genome Analysis Toolkit (GATK)](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
+  - Detect **structural variant (SV)** with [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers (e.g., Manta, DELLY, GRIDSS), and then infer shared SV calls
+  - Detect **copy number gains and losses (CNV)** detection with [CNVKit](https://cnvkit.readthedocs.io)
+  - Detect **splice-altering intronic variants** with [spliceAI](https://github.com/Illumina/SpliceAI)
   - Understand common variant report file format: [VCF](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format)
   - Translate a VCF file from its current reference genome build to another build version: run [LiftoverVcf (Picard)](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
   - Common variants may less likely cause rare or highly [penetrant](https://link.springer.com/article/10.1007/s00439-013-1331-2) diseases: exclude variants with allele frequency > 1% in [Genome Aggregation Database (gnomAD)](https://gnomad.broadinstitute.org/)
@@ -36,9 +37,9 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Annotate and assess how genetic variants affect genes and proteins, including specific changes to amino acids with GATK-compatible [SnpEff](http://pcingola.github.io/SnpEff/snpeff/introduction/)
   - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants
   - In a clinical setting, prioritize summary and report of variants using [Human Phenotype Ontology (HPO) terms](https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/the-human-phenotype-ontology)
+
 - **Downstream analysis**
   - Assess the relationship between genotype and gene expression with [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL), which operates linear regression with [additive genotype effect](https://plato.stanford.edu/entries/heritability/#HeriPopuGene)/[ANOVA genotype effect](https://www.fao.org/4/y4391e/y4391e07.htm)
-  - 
 
 - **Scalable processing**
   - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
