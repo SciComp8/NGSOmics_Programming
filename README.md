@@ -30,7 +30,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - For **copy number gains and losses** detection: run [CNVKit](https://cnvkit.readthedocs.io)
   - Understand common variant report file format: [VCF](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format)
   - Translate a VCF file from its current reference genome build to another build version: run [LiftoverVcf (Picard)](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
-  - Common variants may less likely cause rare or highly [penetrant](https://link.springer.com/article/10.1007/s00439-013-1331-2) diseases: exclude Genome Aggregation Database ([gnomAD](https://gnomad.broadinstitute.org/)) allele frequency > 1%. 
+  - Common variants may less likely cause rare or highly [penetrant](https://link.springer.com/article/10.1007/s00439-013-1331-2) diseases: exclude variants with allele frequency > 1% in Genome Aggregation Database ([gnomAD](https://gnomad.broadinstitute.org/)).
+  - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants 
  
 - **Genome assembly and annotation**
 - **Downstream analysis**
