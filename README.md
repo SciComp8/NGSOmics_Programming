@@ -37,10 +37,11 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants
   - In a clinical setting, prioritize summary and report of variants using [Human Phenotype Ontology (HPO) terms](https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/the-human-phenotype-ontology)
 - **Downstream analysis**
-  - [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL)
+  - Assess the relationship between genotype and gene expression with [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL), which operates linear regression with [additive genotype effect](https://plato.stanford.edu/entries/heritability/)/[ANOVA genotype effect](https://www.fao.org/4/y4391e/y4391e07.htm)
+  - 
 
-- **Leverage cloud-based computational resources for scalable processing**
-  - [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
+- **Scalable processing**
+  - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
 
 <hr>
 
