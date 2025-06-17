@@ -27,7 +27,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Detect **structural variant (SV)** with [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers (e.g., Manta, DELLY, GRIDSS), and then infer shared SV calls
   - Detect **copy number gains and losses (CNV)** detection with [CNVKit](https://cnvkit.readthedocs.io)
   - Detect **splice-altering intronic variants** with [spliceAI](https://github.com/Illumina/SpliceAI)
-  - Understand [VCF](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format), a common variant report file format
+  - Understand [VCF](https://gatk.broadinstitute.org/hc/en-us/articles/360035531692-VCF-Variant-Call-Format), a common variant report file format, and [MAF](https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/), which aggregates mutation information from VCF
   - Translate a VCF file from its current reference genome build to another build version: run [LiftoverVcf (Picard)](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
   - Common variants may less likely cause rare or highly [penetrant](https://link.springer.com/article/10.1007/s00439-013-1331-2) diseases: exclude variants with allele frequency > 1% in [Genome Aggregation Database (gnomAD)](https://gnomad.broadinstitute.org/)
  
