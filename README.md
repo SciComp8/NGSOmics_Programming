@@ -36,12 +36,12 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Genome annotation**
   - Annotate and assess how genetic variants affect genes and proteins, including specific changes to amino acids with GATK-compatible [SnpEff](http://pcingola.github.io/SnpEff/snpeff/introduction/)
   - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants
-  - In a clinical setting, prioritize summary and report of variants using [Human Phenotype Ontology (HPO) terms](https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/the-human-phenotype-ontology); for rare diseases, look out for the variant having phenotypic features in common with [DECIPHER](https://www.deciphergenomics.org)
+  - In a clinical setting, prioritize summary and report of variants using [Human Phenotype Ontology (HPO) terms](https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/the-human-phenotype-ontology); for rare diseases, to improve certainty about whether a variant is pathogenic, look for that having phenotypic features in common with [DECIPHER](https://www.deciphergenomics.org); for cancers, mine the biological consequences and therapeutic/diagnostic/prognostic implications of genetic variants with [OncoKB](https://www.oncokb.org)
 
 - **Downstream analysis**
   - Assess the relationship between genotype and gene expression with [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL), which operates linear regression with [additive genotype effect](https://plato.stanford.edu/entries/heritability/#HeriPopuGene)/[ANOVA genotype effect](https://www.fao.org/4/y4391e/y4391e07.htm)
   - Test whether groups of SNPs, often linked to sets of functionally related genes, show a stronger overall association with a phenotype than would be expected by randomness with [INRICH](https://zzz.bwh.harvard.edu/inrich/)
-  - Infer differentially expressed genes and enriched pathyway for the trait-associated SNPs with [GIGSEA](https://github.com/zhushijia/GIGSEA?tab=readme-ov-file)
+  - Infer differentially expressed genes and enriched pathyways for the trait-associated SNPs with [GIGSEA](https://github.com/zhushijia/GIGSEA?tab=readme-ov-file)
 
 - **Scalable and reproducible processing**
   - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
