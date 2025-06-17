@@ -25,7 +25,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Alignment and variant calling**
   - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
-  - Detect **SNP/indel** with [Genome Analysis Toolkit (GATK)](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
+  - Detect **single-nucleotide polymorphism (SNP)/indel** with [Genome Analysis Toolkit (GATK)](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
   - Detect **structural variant (SV)** with [VISTA](https://academic.oup.com/bib/article/25/5/bbae462/7761957), which optimizes the F1-score of SV calls by combining different high-performing SV callers; or run multiple SV callers (e.g., Manta, DELLY, GRIDSS), and then infer shared SV calls
   - Detect **copy number gains and losses (CNV)** detection with [CNVKit](https://cnvkit.readthedocs.io)
   - Detect **splice-altering intronic variants** with [spliceAI](https://github.com/Illumina/SpliceAI)
@@ -40,6 +40,8 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 
 - **Downstream analysis**
   - Assess the relationship between genotype and gene expression with [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL), which operates linear regression with [additive genotype effect](https://plato.stanford.edu/entries/heritability/#HeriPopuGene)/[ANOVA genotype effect](https://www.fao.org/4/y4391e/y4391e07.htm)
+  - Test whether groups of SNPs, often linked to sets of functionally related genes, show a stronger overall association with a phenotype than would be expected by randomness with [INRICH](https://zzz.bwh.harvard.edu/inrich/)
+  - Infer differentially expressed genes and enriched pathyway for the trait-associated SNPs with [GIGSEA](https://github.com/zhushijia/GIGSEA?tab=readme-ov-file)
 
 - **Scalable and reproducible processing**
   - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
