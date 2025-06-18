@@ -1,4 +1,4 @@
-# OMICS <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="45" height="45">
+# What OIMCS Problems Are We Trying to Solve? <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="45" height="45">
 
 
 This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of cutting-edge and classic computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
@@ -15,7 +15,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 ## Technical lens
 ### Analyze whole genome sequencing data
 
-- **Raw read quality control and preprocessing**
+- **Solve raw read quality control and preprocessing**
   - Run [fastp](https://github.com/OpenGene/fastp) to remove reads with low average quality score, trim [adapters](https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/next-generation-sequencing/dna-sequencing-preparation-illumina.html), and eliminate [poly-G tails](https://speciationgenomics.github.io/fastp/) in Illumina NovaSeq/NextSeq data
   - Run [MultiQC](https://seqera.io/multiqc/) to evaluate pre- and post-trimming metrics
   - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
@@ -31,17 +31,17 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Translate a VCF file from its current reference genome build to another build version: run [LiftoverVcf (Picard)](https://gatk.broadinstitute.org/hc/en-us/articles/360036363632-LiftoverVcf-Picard)
   - Common variants may less likely cause rare or highly [penetrant](https://link.springer.com/article/10.1007/s00439-013-1331-2) diseases: exclude variants with allele frequency > 1% in [Genome Aggregation Database (gnomAD)](https://gnomad.broadinstitute.org/)
  
-- **Genome annotation**
+- **Solve genome annotation**
   - Annotate and assess how genetic variants affect genes and proteins, including specific changes to amino acids with GATK-compatible [SnpEff](http://pcingola.github.io/SnpEff/snpeff/introduction/)
   - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants
   - In a clinical setting, prioritize summary and report of variants using [Human Phenotype Ontology (HPO) terms](https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/the-human-phenotype-ontology); for rare diseases, to improve certainty about whether a variant is pathogenic, look for the one showing phenotypic features in common with [DECIPHER](https://www.deciphergenomics.org); for cancers, mine the biological consequences and therapeutic/diagnostic/prognostic implications of genetic variants with [OncoKB](https://www.oncokb.org) and [oncokb-annotator](https://github.com/oncokb/oncokb-annotator)
 
-- **Downstream analysis**
+- **Solve downstream analysis**
   - Assess the relationship between genotype and gene expression with [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL), which operates linear regression with [additive genotype effect](https://plato.stanford.edu/entries/heritability/#HeriPopuGene)/[ANOVA genotype effect](https://www.fao.org/4/y4391e/y4391e07.htm)
   - Test whether groups of SNPs, often linked to sets of functionally related genes, show a stronger overall association with a phenotype than would be expected by randomness with [INRICH](https://zzz.bwh.harvard.edu/inrich/)
   - Infer differentially expressed genes and enriched pathyways for the trait-associated SNPs with [GIGSEA](https://github.com/zhushijia/GIGSEA?tab=readme-ov-file)
 
-- **Scalable and reproducible processing**
+- **Solve scalable and reproducible processing**
   - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
   - Make WGS analysis workflow reproducible with Python-based [snakemake](https://snakemake.readthedocs.io/en/stable/)
 
