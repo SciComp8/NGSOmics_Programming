@@ -20,7 +20,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Run [MultiQC](https://seqera.io/multiqc/) to evaluate pre- and post-trimming metrics
   - [Validate](https://www.biorxiv.org/content/10.1101/2024.11.23.624993v1.full) sample identity using genetically inferred markers (e.g., sex chromosomes, SNP fingerprinting) and file hashing to ensure data integrity
   - Check [sequencing coverage](https://www.illumina.com/documents/products/technotes/technote_coverage_calculation.pdf) (e.g., 30–50× for human genomes)/read length uniformity/read quality score distribution/GC content distribution
-- **Alignment and variant calling**
+- **Solve alignment and variant calling**
   - For human study: adopt and adapt [GRCh38](https://www.genome.ucsc.edu/cgi-bin/hgGateway) build by [Genome Reference Consortium](https://www.ncbi.nlm.nih.gov/grc), considering [ambiguous mapping](https://www.illumina.com/science/genomics-research/articles/dragen-demystifying-reference-genomes.html)
   - Run [bwa-mem2](https://github.com/bwa-mem2/bwa-mem2) for short-read alignment, while [Minimap2](https://github.com/lh3/minimap2) for long-read alignment
   - Detect **single-nucleotide polymorphism (SNP)/indel** with [Genome Analysis Toolkit (GATK)](https://gatk.broadinstitute.org/hc/en-us) for germline DNA
@@ -36,7 +36,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Look out for coding, splice-site, and [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) pathogenic variants
   - In a clinical setting, prioritize summary and report of variants using [Human Phenotype Ontology (HPO) terms](https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/the-human-phenotype-ontology); for rare diseases, to improve certainty about whether a variant is pathogenic, look for the one showing phenotypic features in common with [DECIPHER](https://www.deciphergenomics.org); for cancers, mine the biological consequences and therapeutic/diagnostic/prognostic implications of genetic variants with [OncoKB](https://www.oncokb.org) and [oncokb-annotator](https://github.com/oncokb/oncokb-annotator)
 
-- **Solve downstream analysis**
+- **Solve downstream analysis for biomedical insights**
   - Assess the relationship between genotype and gene expression with [MatrixEQTL](https://github.com/andreyshabalin/MatrixEQTL), which operates linear regression with [additive genotype effect](https://plato.stanford.edu/entries/heritability/#HeriPopuGene)/[ANOVA genotype effect](https://www.fao.org/4/y4391e/y4391e07.htm)
   - Test whether groups of SNPs, often linked to sets of functionally related genes, show a stronger overall association with a phenotype than would be expected by randomness with [INRICH](https://zzz.bwh.harvard.edu/inrich/)
   - Infer differentially expressed genes and enriched pathyways for the trait-associated SNPs with [GIGSEA](https://github.com/zhushijia/GIGSEA?tab=readme-ov-file)
