@@ -44,7 +44,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - **Solve scalable and reproducible processing**
   - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
   - Make WGS analysis workflow reproducible with Python-based [snakemake](https://snakemake.readthedocs.io/en/stable/)
-  - Do whole‑genome association analysis at biobank scale (i.e., thousands of phenotypes across hundreds of thousands of samples) for both quantitative and binary traits, while being computationally and statistically efficient with [https://github.com/rgcgithub/regenie]
+  - Do whole‑genome association analysis at biobank scale (i.e., thousands of phenotypes across hundreds of thousands of samples) for both quantitative and binary traits, while being computationally and statistically efficient with [regenie](https://github.com/rgcgithub/regenie)
 
 <hr>
 
