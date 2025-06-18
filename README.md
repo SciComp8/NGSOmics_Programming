@@ -1,4 +1,4 @@
-# What OIMCS Problems Are We Trying to Solve? <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="45" height="45">
+# OIMCS Problems To Solve <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="45" height="45">
 
 
 This repository houses conceptual perspectives, coding practice, assignment/competition solutions from a variety of cutting-edge and classic computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
@@ -155,7 +155,9 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - Profile the whole transcriptome from Formalin-Fixed Paraffin-Embedded tissue sections with [Visium](https://www.10xgenomics.com/support/spatial-gene-expression-ffpe)
 - Profile subcellular-level RNA targets with [Xenium](https://www.10xgenomics.com/support/in-situ-gene-expression)
 - Read spatial transcriptomics data with [SpatialData](Spatial_Transcriptomics/Read_Data.py)
-
+- [https://github.com/drieslab/Giotto]
+- Analyze spatial multi-omics data with [Giotto Suite](https://github.com/drieslab/Giotto)
+  
 <hr>
 
 ## Conceptual lens
