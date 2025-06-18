@@ -155,7 +155,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 - Profile the whole transcriptome from Formalin-Fixed Paraffin-Embedded tissue sections with [Visium](https://www.10xgenomics.com/support/spatial-gene-expression-ffpe)
 - Profile subcellular-level RNA targets with [Xenium](https://www.10xgenomics.com/support/in-situ-gene-expression)
 - Read spatial transcriptomics data with [SpatialData](Spatial_Transcriptomics/Read_Data.py)
-- Analyze spatial multi-omics data with [Giotto Suite](https://github.com/drieslab/Giotto)
+- Analyze spatial DNA/RNA/protein data in subcellular/single cell/multiple cells with [Giotto Suite](https://github.com/drieslab/Giotto)
   
 <hr>
 
