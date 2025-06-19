@@ -49,7 +49,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 <hr>
 
 ## RNA sequencing
-Besides its common use in analyzing gene expression differences, what [other insights](https://www.wikiwand.com/en/articles/RNA-Seq) can RNA-seq technology uncover?
+Besides its common use in understanding gene expression differences, and isoform and splicing patterns across tissues or patient of comparison interest, what [other insights](https://academic.oup.com/bib/article/22/6/bbab259/6330938) can RNA-seq technology uncover?
 
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
