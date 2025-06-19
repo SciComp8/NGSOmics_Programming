@@ -53,7 +53,6 @@ Besides its common use in understanding gene expression differences, and isoform
 
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
-- [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
 - Profile single cell transcriptome with [Chromium Single Cell Universal 3' Gene Expression](https://www.10xgenomics.com/support/universal-three-prime-gene-expression)
 - A mini scRNA-seq [pipeline](SingleCellRNASeq/Scanpy/pipeline.py) | [Why apply pipelines?](https://github.com/SciComp8/NGSOmics_Programming/blob/main/SingleCellRNASeq/Scanpy/Why_Pipeline.md)
 - If given raw `bcl` files, we [convert them to fastq files](FastQC/bcl_to_fastq.sh)
@@ -82,6 +81,7 @@ Besides its common use in understanding gene expression differences, and isoform
 - Identify [single-cell eQTL](https://github.com/XFWuCN/scQTLtools)
 - Define [spatial architecture in single cell data](https://www.10xgenomics.com/analysis-guides/integrating-single-cell-and-visium-spatial-gene-expression-data) | [spacexr](https://www.10xgenomics.com/analysis-guides/integrating-10x-visium-and-chromium-data-with-r)
 - Capture [gene expression and chromatin accessibility together in a single cell](https://www.10xgenomics.com/support/epi-multiome)
+- Experiment with your data analysis process using [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
 
 <hr>
 
@@ -89,7 +89,6 @@ Besides its common use in understanding gene expression differences, and isoform
   - Single cell or single nuclei RNA-seq costs 10–30 times more than bulk RNA-seq, making large-scale adoption in clinical settings challenging. We can achieve cell-type resolution in bulk RNA-Seq through deconvolution techniques like [SQUID](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6)
   - How does RNA get [prepared and sequenced](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md) using Illumina technology?
     - What types of [library preparation kits](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits.html?tags=&pageSize=20&pageNumber=1&sortBy=title) and [sequencers](https://www.illumina.com/systems/sequencing-platforms.html) are offered?
-  - [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
   - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
   - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
       - Other splice-aware alignment tool options: Olego, HISAT2, MapSplice, ABMapper, Passion, BLAT, RUM ...
@@ -106,6 +105,7 @@ Besides its common use in understanding gene expression differences, and isoform
   - [Perform differential gene expression analysis](BulkRNASeq/DEAnalysisTCell.Rmd)
   - [Perform principal component analysis, heatmap, and clustering](BulkRNASeq/PCAHeatmapClusteringTissue.Rmd)
   - [Perform gene set enrichment analysis](BulkRNASeq/GeneSetTCell.Rmd)
+  - Experiment with your data analysis process using [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
     
 <hr>
 
