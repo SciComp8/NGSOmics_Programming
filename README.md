@@ -107,6 +107,7 @@ Besides its common use in understanding gene expression differences, and isoform
     
 <hr>
 
+## Epigenomics sequencing
 ### Analyze bulk ATAC-seq data
   - [Introduction to transcription regulation](https://www.youtube.com/watch?v=K2gKdFPipv0)
   - [Practical guide](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3)
