@@ -12,7 +12,7 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
 * [Bulk ATAC-seq analysis](#Analyze-bulk-ATAC-seq-data)
 * [Proteomics | metabolomics | spatial transcriptomics analysis](#Analyze-other-omics-data)
 
-## Technical lens
+## DNA sequencing
 ### Analyze whole genome sequencing data
 
 - **Solve raw read quality control and preprocessing**
@@ -47,6 +47,9 @@ This repository houses conceptual perspectives, coding practice, assignment/comp
   - Do whole‑genome association analysis at biobank scale (i.e., thousands of phenotypes across hundreds of thousands of samples) for both quantitative and binary traits, while being computationally and statistically efficient with [regenie](https://github.com/rgcgithub/regenie)
 
 <hr>
+
+## RNA sequencing
+Besides its common use in analyzing gene expression differences, what [other insights](https://www.wikiwand.com/en/articles/RNA-Seq) can RNA-seq technology uncover?
 
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
