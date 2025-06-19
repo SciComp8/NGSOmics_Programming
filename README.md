@@ -12,6 +12,50 @@ This repository is created for helping people ask the questions they want and fi
 * [Bulk ATAC-seq analysis](#Analyze-bulk-ATAC-seq-data)
 * [Proteomics | metabolomics | spatial transcriptomics analysis](#Analyze-other-omics-data)
 
+## Epigenomics sequencing
+
+*Under construction*
+
+### Analyze bulk ATAC-seq data
+  - [Introduction to transcription regulation](https://www.youtube.com/watch?v=K2gKdFPipv0)
+  - [Practical guide](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3)
+  - Run [ENCODE ATAC-seq pipeline](https://github.com/ScienceComputing/atac-seq-pipeline/blob/master/README.md) to perform alignment, quality assurance, peaking calling, and signal track generation
+  - If we're interested in inspecting every step in each analytical phase, or even leveraging advanced/unique features of other tools that the current pipeline ignores, ...
+    - For alignment and post-alignment phases, we can ...
+      - Use Rsubread or Rbowtie2 to [align the fastq files relative to hg19/hg38/hs1](ATACSeq/AlignFASTQ.Rmd)
+      - Use GenomicAlignments and GenomicRanges to perform post-alignment processing including [reading properly paired reads, estimating MapQ scores/insert sizes, reconstructing the full-length fragment, and others](ATACSeq/PostAlignment.Rmd)
+      - Use ATACseqQC to perform [comprehensive ATAC-seq quality assurance](ATACSeq/ATACseqQC.Rmd)
+    - For TSS analysis phase, we can ...
+      - Use soGGi to [assess the transcriptional start site signal](ATACSeq/EvaluateTSS.Rmd) in the nucleosome-free open region
+    - For peaking calling phase, we can ...
+      - Use MACS2 and ChIPQC to [call peaks in the nucleosome-free open region, and perform quality assurance](ATACSeq/CallPeak.Rmd)
+      - Or use Genrich to call peaks in the nucleosome-free open region
+      - Or use MACS3/MACSr (R wrapper of MACS3) to [call peaks in the nucleosome-free open region](ATACSeq/CallPeak.Rmd)
+      - Use ChIPseeker to [annotate peak regions with genomic features](ATACSeq/CallPeak.Rmd)
+    - For functional analysis phase, we can ...
+      - Use rGREAT to [functionally interpret the peak regions based on the GO database](ATACSeq/FunctionalAnalysis.Rmd) 
+      - Use GenomicRanges and GenomicAlignments to [select and count non-redundant peaks](ATACSeq/DifferentialAnalysis.Rmd)
+      - Use DESeq2/DESeq2-based DiffBind and ChIPseeker to [analyze differences in peaks with gene annotations across conditions](ATACSeq/DifferentialAnalysis.Rmd)
+      - Use clusterProfiler to [perform enrichment analysis of differential peak regions](ATACSeq/DifferentialAnalysis.Rmd)
+      - However, functional insights gained by peak annotations can hardly illustrate what key regulators shape the transcription mechanism. 
+    - To further infer transcription factors acting in peak regions, we can ...
+      - Use MotifDb/JASPAR2022 and seqLogo/ [recommend] ggseqlogo to [search and visualize motifs](ATACSeq/Search_Visualize_Motif.Rmd)
+      - Use motifmatchr (R wrapper of MOODS) to [map peaks to motifs](ATACSeq/IdentifyMotif.Rmd), DNA sequences preferred by transcription factors
+      - Use chromVAR to [analyze differences in motifs across conditions](ATACSeq/Detect_Difference_Motif.Rmd)
+
+<hr>
+
+### Analyze single cell ATAC-seq data
+  - Profile distinct open chromatin regions across the genome at single-cell resolution with [Epi ATAC](https://www.10xgenomics.com/support/epi-atac)
+  - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
+  - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
+  - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
+  - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
+  - Find DNA motifs linked to differences in single-cell or bulk chromatin accessibility with [chromVAR](https://github.com/GreenleafLab/chromVAR)
+  - Profile somatic mutations with epigenetic alterations at single-cell resolution with [GoT–ChA](https://www.nature.com/articles/s41586-024-07388-y)
+
+<hr>
+
 ## DNA sequencing
 ### Analyze whole genome sequencing data
 
@@ -107,47 +151,6 @@ Besides its common use in understanding gene expression differences, and isoform
   - [Perform gene set enrichment analysis](BulkRNASeq/GeneSetTCell.Rmd)
   - Experiment with your data analysis process using [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
     
-<hr>
-
-## Epigenomics sequencing
-### Analyze bulk ATAC-seq data
-  - [Introduction to transcription regulation](https://www.youtube.com/watch?v=K2gKdFPipv0)
-  - [Practical guide](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3)
-  - Run [ENCODE ATAC-seq pipeline](https://github.com/ScienceComputing/atac-seq-pipeline/blob/master/README.md) to perform alignment, quality assurance, peaking calling, and signal track generation
-  - If we're interested in inspecting every step in each analytical phase, or even leveraging advanced/unique features of other tools that the current pipeline ignores, ...
-    - For alignment and post-alignment phases, we can ...
-      - Use Rsubread or Rbowtie2 to [align the fastq files relative to hg19/hg38/hs1](ATACSeq/AlignFASTQ.Rmd)
-      - Use GenomicAlignments and GenomicRanges to perform post-alignment processing including [reading properly paired reads, estimating MapQ scores/insert sizes, reconstructing the full-length fragment, and others](ATACSeq/PostAlignment.Rmd)
-      - Use ATACseqQC to perform [comprehensive ATAC-seq quality assurance](ATACSeq/ATACseqQC.Rmd)
-    - For TSS analysis phase, we can ...
-      - Use soGGi to [assess the transcriptional start site signal](ATACSeq/EvaluateTSS.Rmd) in the nucleosome-free open region
-    - For peaking calling phase, we can ...
-      - Use MACS2 and ChIPQC to [call peaks in the nucleosome-free open region, and perform quality assurance](ATACSeq/CallPeak.Rmd)
-      - Or use Genrich to call peaks in the nucleosome-free open region
-      - Or use MACS3/MACSr (R wrapper of MACS3) to [call peaks in the nucleosome-free open region](ATACSeq/CallPeak.Rmd)
-      - Use ChIPseeker to [annotate peak regions with genomic features](ATACSeq/CallPeak.Rmd)
-    - For functional analysis phase, we can ...
-      - Use rGREAT to [functionally interpret the peak regions based on the GO database](ATACSeq/FunctionalAnalysis.Rmd) 
-      - Use GenomicRanges and GenomicAlignments to [select and count non-redundant peaks](ATACSeq/DifferentialAnalysis.Rmd)
-      - Use DESeq2/DESeq2-based DiffBind and ChIPseeker to [analyze differences in peaks with gene annotations across conditions](ATACSeq/DifferentialAnalysis.Rmd)
-      - Use clusterProfiler to [perform enrichment analysis of differential peak regions](ATACSeq/DifferentialAnalysis.Rmd)
-      - However, functional insights gained by peak annotations can hardly illustrate what key regulators shape the transcription mechanism. 
-    - To further infer transcription factors acting in peak regions, we can ...
-      - Use MotifDb/JASPAR2022 and seqLogo/ [recommend] ggseqlogo to [search and visualize motifs](ATACSeq/Search_Visualize_Motif.Rmd)
-      - Use motifmatchr (R wrapper of MOODS) to [map peaks to motifs](ATACSeq/IdentifyMotif.Rmd), DNA sequences preferred by transcription factors
-      - Use chromVAR to [analyze differences in motifs across conditions](ATACSeq/Detect_Difference_Motif.Rmd)
-
-<hr>
-
-### Analyze single cell ATAC-seq data
-  - Profile distinct open chromatin regions across the genome at single-cell resolution with [Epi ATAC](https://www.10xgenomics.com/support/epi-atac)
-  - [Epigenomic and transcriptomic signatures of aging and cancer at single-cell resolution](https://www.nature.com/articles/s43587-024-00751-8)
-  - [Technical Q & A](https://kb.10xgenomics.com/hc/en-us/categories/360001072491)
-  - [Correct batch effect](https://www.10xgenomics.com/analysis-guides/batch-effect-correction-in-chromium-single-cell-atac-data)
-  - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
-  - Find DNA motifs linked to differences in single-cell or bulk chromatin accessibility with [chromVAR](https://github.com/GreenleafLab/chromVAR)
-  - Profile somatic mutations with epigenetic alterations at single-cell resolution with [GoT–ChA](https://www.nature.com/articles/s41586-024-07388-y)
-
 <hr>
 
 ### Analyze other omics data
