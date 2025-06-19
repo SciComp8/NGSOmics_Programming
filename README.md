@@ -86,7 +86,7 @@ Besides its common use in understanding gene expression differences, and isoform
 <hr>
 
 ### Analyze bulk RNA-seq data
-  - Single cell or single nuclei RNA-seq costs 10–30 times more than bulk RNA-seq, making large-scale adoption in clinical settings challenging. We can achieve cell-type resolution in bulk RNA-Seq through deconvolution techniques like [SQUID](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6)
+  - Can we [obtain cell-type-specific gene expression information without using single-cell or single-nucleus RNA-seq](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6), as they are costly in clinical research?
   - How does RNA get [prepared and sequenced](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md) using Illumina technology?
     - What types of [library preparation kits](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits.html?tags=&pageSize=20&pageNumber=1&sortBy=title) and [sequencers](https://www.illumina.com/systems/sequencing-platforms.html) are offered?
   - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
