@@ -135,14 +135,14 @@ Besides its common use in understanding gene expression differences, and isoform
 
 ### Analyze bulk RNA-seq data
   - Can we [obtain cell-type-specific gene expression information without using single-cell or single-nucleus RNA-seq](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6), as they are costly in clinical research?
-  - How does RNA get [prepared and sequenced](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md) using Illumina technology?
+  - How do RNA molecules get [prepared and sequenced](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md) using Illumina technology?
     - What types of [library preparation kits](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits.html?tags=&pageSize=20&pageNumber=1&sortBy=title) and [sequencers](https://www.illumina.com/systems/sequencing-platforms.html) are offered?
   - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
-  - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
-      - Other splice-aware alignment tool options: Olego, HISAT2, MapSplice, ABMapper, Passion, BLAT, RUM ...
-      - Other alignment tools that disregard isoforms: BWA, Bowtie2 ...
-  - Use Rsubread to [align the reads](BulkRNASeq/AlignmentCountingTCell.Rmd)
-    - **Why align?** To pinpoint the specific location on the human genome from which our reads originated
+  - Which genome regions are transcribed? What are the exact genomic coordinates (of the reference genome) our sequencing reads come from?
+    - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
+        - Other splice-aware alignment tool options: Olego, HISAT2, MapSplice, ABMapper, Passion, BLAT, RUM ...
+        - Other alignment tools disregarding isoforms: BWA, Bowtie2 ...
+    - Use Rsubread to [align the reads](BulkRNASeq/AlignmentCountingTCell.Rmd)
   - Use Qualimap to perform [quality assurance](BulkRNASeq/Qualimap_QC.sh) on the aligned reads
   - Use [MultiQC](BulkRNASeq/multiqc_QC.sh) to harmonize all QC and alignment metadata from FastQC, STAR, Qualimap, and other [tools](https://multiqc.info/modules/)
   - Use GenomicAlignments for aligned reads to [obtain the gene-level or exon-level quantification](BulkRNASeq/AlignmentCountingTCell.Rmd)
