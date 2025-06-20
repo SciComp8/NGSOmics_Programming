@@ -136,9 +136,10 @@ This repository is created for helping people ask the questions they want and fi
 
 ### Analyze bulk RNA-seq data
   - Can we [obtain cell-type-specific gene expression information without using single-cell or single-nucleus RNA-seq](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6), as they are costly in clinical research?
-  - How do RNA molecules get [prepared and sequenced](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md) using Illumina technology?
+  - How do RNA molecules get [prepared](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md#illumina-library-preparation) and [sequenced](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md#illumina-sequencing) using Illumina technology?
     - What types of [library preparation kits](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits.html?tags=&pageSize=20&pageNumber=1&sortBy=title) are offered to prepare a [complementary DNA (cDNA) library](https://plato.stanford.edu/entries/molecular-biology/#GoinGenoPostGeno) for sequencing?
     - What types of [sequencers](https://www.illumina.com/systems/sequencing-platforms.html) are offered to sequence the stable double-stranded cDNA?
+    - Prior to cDNA library preparation, is RNA extracted sufficiently? How is the [degradation level](https://nanoporetech.com/document/requirements/rna-stability) of the extracted RNA? Here is a more thorough guide on [checking RNA integrity](https://www.rnaseqcore.vet.cornell.edu/files/TREx_Guide_to_Fragment_Analyzer_RNA_QC%20_V1_2.pdf)
   - How accurate are the transcripts measured by the sequencer?
     - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
   - Which genome regions are transcribed? What are the exact genomic coordinates (of the reference genome) our sequencing reads come from?
