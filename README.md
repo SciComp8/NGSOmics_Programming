@@ -137,7 +137,8 @@ This repository is created for helping people ask the questions they want and fi
 ### Analyze bulk RNA-seq data
   - Can we [obtain cell-type-specific gene expression information without using single-cell or single-nucleus RNA-seq](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03016-6), as they are costly in clinical research?
   - How do RNA molecules get [prepared and sequenced](https://github.com/hbctraining/Intro-to-bulk-RNAseq/blob/main/lessons/01_intro-to-RNAseq.md) using Illumina technology?
-    - What types of [library preparation kits](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits.html?tags=&pageSize=20&pageNumber=1&sortBy=title) and [sequencers](https://www.illumina.com/systems/sequencing-platforms.html) are offered?
+    - What types of [library preparation kits](https://www.illumina.com/products/by-type/sequencing-kits/library-prep-kits.html?tags=&pageSize=20&pageNumber=1&sortBy=title) are offered to prepare a [complementary DNA (cDNA) library](https://plato.stanford.edu/entries/molecular-biology/#GoinGenoPostGeno) for sequencing?
+    - What types of [sequencers](https://www.illumina.com/systems/sequencing-platforms.html) are offered to sequence the stable double-stranded cDNA?
   - How accurate are the transcripts measured by the sequencer?
     - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
   - Which genome regions are transcribed? What are the exact genomic coordinates (of the reference genome) our sequencing reads come from?
