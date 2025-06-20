@@ -96,8 +96,9 @@ This repository is created for helping people ask the questions they want and fi
 
 <hr>
 
-## RNA sequencing
-Besides its common use in understanding gene expression differences, and isoform and splicing patterns across tissues or patient of comparison interest, what [other insights](https://academic.oup.com/bib/article/22/6/bbab259/6330938) can RNA-seq technology uncover?
+## RNA sequencing (RNA-seq)
+- When was the term 'RNA-seq' [first coined](https://www.cell.com/cell/fulltext/S0092-8674(08)00448-0)? At what point did researchers [start RNA-seq before the term 'RNA-seq' was formally introduced](https://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-7-246)?
+- Besides its common use in understanding gene expression differences, and isoform and splicing patterns across tissues or patient of comparison interest, what [other insights](https://academic.oup.com/bib/article/22/6/bbab259/6330938) can RNA-seq technology uncover?
 
 ### Analyze single cell RNA-seq data
 - [Introduction to single cell RNA-seq](https://github.com/hbctraining/Intro-to-scRNAseq/blob/master/schedule/links-to-lessons.md)
