@@ -1,9 +1,8 @@
 # OIMCS Problems To Solve <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="45" height="45">
 
+This repository is created for helping people find what kind of computational biology/bioinformatics questions they can work on. Unlike the well-structured frames in mathematics and statistics, where theorems and definitions are clearly laid out, biology and medicine often involve complex, less organized domains of knowledge. This repo aims to offer you a structured and clear overview of approachable problems and their candidate solutions, making it easier and faster to navigate the computational omics field. 
 
-This repository is created for helping people ask the questions they want and find the answers they need. It aims to be your go-to source for reliable knowledge from a variety of cutting-edge and classic computational biology/bioinformatics courses, workshops, technical manuals, academic articles, and others. 
-
-*Last updated: 18 Jun 2025*
+*Last updated: 22 Jun 2025*
 
 ## Features
 * [Single cell RNA-seq analysis](#Analyze-single-cell-RNA-seq-data)
