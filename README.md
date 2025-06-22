@@ -1,7 +1,7 @@
 <a id="top"></a>
 # OIMCS <img src="https://github.com/SciComp8/NGSOmics_Programming/blob/main/dna.png" width="45" height="45">
 
-This repository is created for helping either newcomers or seasoned researchers find what kind of computational biology/bioinformatics questions they can work on and candidate solutions. Unlike well-structured frames in mathematics and statistics, where theorems and definitions are clearly laid out, biology and medicine often involve complex, less organized domains of knowledge. However, this repo sets itself apart by offering you a structured and clear overview of the computational concepts and techniques of next-generation sequencing, for you to easy and effectively navigate the omics landscape.
+This repository is created for helping either newcomers or seasoned researchers find what kind of computational biology/bioinformatics questions they can work on and candidate solutions. Unlike well-structured frames in mathematics and statistics, where theorems and definitions are clearly laid out, biology and medicine often involve complex, less organized domains of knowledge. However, this repo sets itself apart by offering you a structured and clear overview of the computational concepts and techniques of next-generation sequencing, for you to easily and effectively navigate the omics landscape.
 
 *Last updated: 22 Jun 2025*
 
