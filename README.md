@@ -22,6 +22,8 @@ This repository is created for helping people find what kind of computational bi
 
 ### Analyze Cut-And-Run data
 
+[🔝](#top)
+
 ### Analyze bulk ATAC-seq data
   - [Introduction to transcription regulation](https://www.youtube.com/watch?v=K2gKdFPipv0)
   - [Practical guide](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3)
@@ -49,6 +51,8 @@ This repository is created for helping people find what kind of computational bi
       - Use motifmatchr (R wrapper of MOODS) to [map peaks to motifs](ATACSeq/IdentifyMotif.Rmd), DNA sequences preferred by transcription factors
       - Use chromVAR to [analyze differences in motifs across conditions](ATACSeq/Detect_Difference_Motif.Rmd)
 
+[🔝](#top)
+
 <hr>
 
 ### Analyze single cell ATAC-seq data
@@ -59,6 +63,8 @@ This repository is created for helping people find what kind of computational bi
   - [Transfer cell type labels](ATACSeq/Integration/SingleCell/Integration_Full_v1.qmd) from single-cell RNA-seq data to separately collected single-cell ATAC-seq data
   - Find DNA motifs linked to differences in single-cell or bulk chromatin accessibility with [chromVAR](https://github.com/GreenleafLab/chromVAR)
   - Profile somatic mutations with epigenetic alterations at single-cell resolution with [GoT–ChA](https://www.nature.com/articles/s41586-024-07388-y)
+
+[🔝](#top)
 
 <hr>
 
@@ -95,6 +101,8 @@ This repository is created for helping people find what kind of computational bi
   - Leverage cloud-based computating with [Terra](https://www.broadinstitute.org/videos/broade-introduction-terra-scalable-platform-biomedical-research) and [Galaxy](https://galaxyproject.org)
   - Make WGS analysis workflow reproducible with Python-based [snakemake](https://snakemake.readthedocs.io/en/stable/)
   - Do whole‑genome association analysis at biobank scale (i.e., thousands of phenotypes across hundreds of thousands of samples) for both quantitative and binary traits, while being computationally and statistically efficient with [regenie](https://github.com/rgcgithub/regenie)
+
+[🔝](#top)
 
 <hr>
 
@@ -134,6 +142,8 @@ This repository is created for helping people find what kind of computational bi
 - Capture [gene expression and chromatin accessibility together in a single cell](https://www.10xgenomics.com/support/epi-multiome)
 - Experiment with your data analysis process using [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
 
+[🔝](#top)
+
 <hr>
 
 ### Analyze bulk RNA-seq data
@@ -160,7 +170,9 @@ This repository is created for helping people find what kind of computational bi
   - [Perform principal component analysis, heatmap, and clustering](BulkRNASeq/PCAHeatmapClusteringTissue.Rmd)
   - [Perform gene set enrichment analysis](BulkRNASeq/GeneSetTCell.Rmd)
   - Experiment with your data analysis process using [COVID-19 RNA-seq data resources](https://github.com/ScienceComputing/COVID-19-RNA-Seq-datasets)
-    
+
+[🔝](#top)
+
 <hr>
 
 ### Analyze other omics data
@@ -175,12 +187,16 @@ This repository is created for helping people find what kind of computational bi
 - Profile subcellular-level RNA targets with [Xenium](https://www.10xgenomics.com/support/in-situ-gene-expression)
 - Read spatial transcriptomics data with [SpatialData](Spatial_Transcriptomics/Read_Data.py)
 - Analyze spatial DNA/RNA/protein data in subcellular/single cell/multiple cells with [Giotto Suite](https://github.com/drieslab/Giotto)
-  
+
+[🔝](#top)
+
 <hr>
 
 ## Conceptual lens
 - [High level multi-omics idea](HighLevelIdea_MultiOmics.md)
 - [Case-control design](StudyDesign/CaseControl_Design.md)
+
+[🔝](#top)
 
 <hr>
 
