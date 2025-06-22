@@ -142,6 +142,7 @@ This repository is created for helping people find what kind of computational bi
   - How accurate are the transcripts measured by the sequencer?
     - Run [FastQC](FastQC/Run_FastQC.sh) or [fastp](FastQC/Run_fastp.sh) to evaluate sequence quality and content
   - Which genome regions are transcribed? What are the exact genomic coordinates (of the reference genome) our sequencing reads come from?
+    - There are many ways to find the reads location, but you can choose a tool that's especially useful for your own scientific design.
     - [Recommend] Use splice-aware genome aligner STAR to [align the reads](BulkRNASeq/STAR_Align.sh)
         - Other splice-aware alignment tool options: Olego, HISAT2, MapSplice, ABMapper, Passion, BLAT, RUM ...
         - Other alignment tools disregarding isoforms: BWA, Bowtie2 ...
